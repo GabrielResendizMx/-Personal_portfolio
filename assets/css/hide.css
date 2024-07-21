@@ -1,0 +1,56 @@
+.content {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    filter: blur(5px);
+}
+
+.hidden-content.show {
+    max-height: 100%; /* Ajusta según la cantidad de contenido */
+    opacity: 1;
+    filter: blur(0);
+}
+
+button{
+    
+    background-color: var(--black-color);
+    padding: 1.1rem 1.5rem;
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+    transition: background-color .4s;
+  }
+
+.container__button{
+  top: 1rem;  
+  position: relative;
+  height: 100%;
+}
+
+.container__button button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden-content.show {
+    max-height: 100%; /* Ajusta según la cantidad de contenido */
+    opacity: 1;
+    filter: blur(0);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #23F906;
+    
+}
+
+
+
